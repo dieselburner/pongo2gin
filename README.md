@@ -31,9 +31,9 @@ Basic Example
 
 ```go
 import (
+    "github.com/dieselburner/pongo2gin"
     "github.com/gin-gonic/gin"
     "github.com/flosch/pongo2"
-    "gitlab.com/go-box/pongo2gin"
 )
 
 func main() {
@@ -80,4 +80,4 @@ Caching is implemented by the Pongo2 library itself.
 GoDoc
 -----
 
-https://godoc.org/gitlab.com/go-box/pongo2gin
+https://godoc.org/github.com/dieselburner/pongo2gin
