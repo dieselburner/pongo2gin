@@ -19,17 +19,18 @@ Requires Gin 1.16 or higher and Pongo2.
  [pongo2 version 5](https://github.com/dieselburner/pongo2gin/) -  Compatible with pongo version 5
  
 
- [pongo2 version 1](https://github.com/dieselburner/pongo2gin/tree/main/v4) - Compatible with pongo version 1
+ [pongo2 version 1](https://github.com/dieselburner/pongo2gin/tree/main/v4) - pongo2 gin minimal framework stability renderer / Compatible with pongo version 2 
  
  
  [pongo2 version 4](https://github.com/dieselburner/pongo2gin/tree/main/v4) -  Compatible with pongo version 4
-
+ 
+ 
 
 # please don't forget to give stars :)
 
 ## Installation  
 
-`go get "github.com/dieselburner/pongo2gin/v4"`
+`go get "github.com/dieselburner/pongo2gin"`
 
 Usage
 -----
@@ -48,18 +49,18 @@ Basic Example
 -------------
 
 ```go
+
 package main
 
 import (
 	"log"
 	"net/http"
-
-	pongo2gin "github.com/dieselburner/pongo2gin/v4"
-
-	"github.com/flosch/pongo2/v4"
+	"github.com/dieselburner/pongo2gin"
+	"github.com/flosch/pongo2"
 	"github.com/gin-gonic/gin"
 )
 
+//GetAllData all list
 func GetAllData(c *gin.Context) {
 	posts := []string{
 		"Andrejs Cainikovs",
@@ -79,7 +80,9 @@ func GetAllData(c *gin.Context) {
 		},
 	)
 }
+
 func main() {
+
 	gin.SetMode(gin.DebugMode)
 	r := gin.Default()
 	r.Use(gin.Recovery())
@@ -87,7 +90,6 @@ func main() {
 	r.GET("/", GetAllData)
 	log.Fatal(r.Run(":8888"))
 }
-
 
 ```
 

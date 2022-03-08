@@ -14,22 +14,22 @@ Requirements
 Requires Gin 1.16 or higher and Pongo2.
 
 
-## Here is Compatible with pongo version 4 &  version 5
+## Here is Compatible with pongo version 1 &  version 4
 
- [pongo2 version 1](https://github.com/dieselburner/pongo2gin/) - pongo2 gin minimal framework stability renderer / Compatible with pongo version 2 
+ [pongo2 version 5](https://github.com/dieselburner/pongo2gin/) -  Compatible with pongo version 5
+ 
+
+ [pongo2 version 1](https://github.com/dieselburner/pongo2gin/tree/main/v4) - Compatible with pongo version 1
  
  
  [pongo2 version 4](https://github.com/dieselburner/pongo2gin/tree/main/v4) -  Compatible with pongo version 4
- 
- 
- [pongo2 version 5](https://github.com/dieselburner/pongo2gin/tree/main/v5) -  Compatible with pongo version 5
 
 
 # please don't forget to give stars :)
 
 ## Installation  
 
-`go get "github.com/dieselburner/pongo2gin"`
+`go get "github.com/dieselburner/pongo2gin/v5"`
 
 Usage
 -----
@@ -54,7 +54,7 @@ import (
 	"log"
 	"net/http"
 
-	pongo2gin "github.com/dieselburner/pongo2gin"
+	pongo2gin "github.com/dieselburner/pongo2gin/v5"
 
 	"github.com/flosch/pongo2/v5"
 	"github.com/gin-gonic/gin"
