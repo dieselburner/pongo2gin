@@ -29,7 +29,7 @@ Requires Gin 1.16 or higher and Pongo2.
 
 ## Installation  
 
-`go get "github.com/dieselburner/pongo2gin/v5"`
+`go get "github.com/dieselburner/pongo2gin"`
 
 Usage
 -----
@@ -54,7 +54,7 @@ import (
 	"log"
 	"net/http"
 
-	pongo2gin "github.com/dieselburner/pongo2gin/v5"
+	pongo2gin "github.com/dieselburner/pongo2gin"
 
 	"github.com/flosch/pongo2/v5"
 	"github.com/gin-gonic/gin"
