@@ -19,7 +19,7 @@ Requires Gin 1.16 or higher and Pongo2.
  [pongo2 version 5](https://github.com/dieselburner/pongo2gin/) -  Compatible with pongo version 5
  
 
- [pongo2 version 1](https://github.com/dieselburner/pongo2gin/tree/main/v4) - Compatible with pongo version 1
+ [pongo2 version 1](https://github.com/dieselburner/pongo2gin/tree/main/v1) - Compatible with pongo version 1
  
  
  [pongo2 version 4](https://github.com/dieselburner/pongo2gin/tree/main/v4) -  Compatible with pongo version 4
