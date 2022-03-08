@@ -29,7 +29,7 @@ Requires Gin 1.16 or higher and Pongo2.
 
 ## Installation  
 
-`go get "github.com/dieselburner/pongo2gin/v5"`
+`go get "github.com/dieselburner/pongo2gin"`
 
 Usage
 -----
@@ -48,18 +48,18 @@ Basic Example
 -------------
 
 ```go
+
 package main
 
 import (
 	"log"
 	"net/http"
-
-	pongo2gin "github.com/dieselburner/pongo2gin/v5"
-
-	"github.com/flosch/pongo2/v5"
+	"github.com/dieselburner/pongo2gin"
+	"github.com/flosch/pongo2"
 	"github.com/gin-gonic/gin"
 )
 
+//GetAllData all list
 func GetAllData(c *gin.Context) {
 	posts := []string{
 		"Andrejs Cainikovs",
@@ -79,7 +79,9 @@ func GetAllData(c *gin.Context) {
 		},
 	)
 }
+
 func main() {
+
 	gin.SetMode(gin.DebugMode)
 	r := gin.Default()
 	r.Use(gin.Recovery())
@@ -87,7 +89,6 @@ func main() {
 	r.GET("/", GetAllData)
 	log.Fatal(r.Run(":8888"))
 }
-
 
 ```
 

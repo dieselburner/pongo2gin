@@ -4,15 +4,15 @@ import (
 	"log"
 	"net/http"
 
-	pongo2gin "github.com/dieselburner/pongo2gin/v5"
-
-	"github.com/flosch/pongo2/v5"
+	"github.com/dieselburner/myPongoGinRender"
+	"github.com/flosch/pongo2"
 	"github.com/gin-gonic/gin"
 )
 
+//GetAllData all list
 func GetAllData(c *gin.Context) {
 	posts := []string{
-		"Andrejs Cainikovs",
+		"Larry Ellison",
 		"Carlos Slim Helu",
 		"Mark Zuckerberg",
 		"Amancio Ortega ",
@@ -29,11 +29,13 @@ func GetAllData(c *gin.Context) {
 		},
 	)
 }
+
 func main() {
+
 	gin.SetMode(gin.DebugMode)
 	r := gin.Default()
 	r.Use(gin.Recovery())
-	r.HTMLRender = pongo2gin.TemplatePath("templates")
+	r.HTMLRender = myPongoGinRender.TemplatePath("templates")
 	r.GET("/", GetAllData)
 	log.Fatal(r.Run(":8888"))
 }
